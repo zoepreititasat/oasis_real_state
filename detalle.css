@@ -1,22 +1,19 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: #fff;
+    background: #E8F1F3;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
 }
 
 .detalle_card { 
-
     margin-top: 108px;
     margin-left: 166px;
     margin-right: 166px;
     padding: 40px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     border-radius: 16px;
-
-
+    background: white;
 }
-
 
 .profile {
     display: flex;
@@ -99,7 +96,7 @@ body {
     max-width: 525px;
     height: fit-content;
     padding: 25px;
-    background: #F9FBF0;
+    background: white;
     border-radius: 16px;
     border: 1px solid #9F9797;
     box-shadow: 0px 4px 24px 0px #00000040;
@@ -147,14 +144,12 @@ body {
  
 }
 
-
-
 .profile-card {
     max-width: 300px;
     height: fit-content;
     padding: 15px;
     padding-top: 25px;
-    background: #F9FBF0;
+    background: white;
     border-radius: 16px;
     border: 1px solid #A5A5A5;
     box-shadow: 0px 4px 24px 0px #00000040;
@@ -201,11 +196,7 @@ body {
     opacity: 1; border-radius: 16px;
     overflow: hidden;
     box-shadow: 0px 4px 24px 0px #00000040;
-
 }
-
-
-
 
 @media (max-width: 768px) {
     .gallery img {

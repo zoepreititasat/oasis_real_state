@@ -46,6 +46,7 @@ body {
     height: 80px;
     margin-left: 10px;
 }
+
 .search-bar{
     height: fit-content;
     width: fit-content;
@@ -63,9 +64,8 @@ body {
     -webkit-border-radius:16px;
     border-radius: 8px; 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
-
-
 }
+
 .search-bar h3{
     margin-top: 15px;
     margin-left: 10px;
@@ -162,4 +162,13 @@ body {
 }
 .footer{
     background-color: #B5CCD2;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating {
+    color: #ffd700;
 }

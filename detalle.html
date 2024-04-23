@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Listing</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="detalle.css">
 </head>
 
 <body>
 
-    <div class="detalle_card">
+    <div class="toolbar">
+        <a href="./index.html">
+            <img class="toolbar-img" src="./imgs/icon_only (2).png" alt="logo" height="600">
+        </a>
+        <div class="nav-buttons-container">
+            <button class="nav-button">Nosotros</button>
+            <button class="nav-button">Publicar</button>
+            <button class="nav-button">Iniciar Sesión</button>
+            <button class="nav-button highlighted">Alquilar</button>
+        </div>
+    </div>
 
+    <div class="detalle_card">
         <div class="gallery">
             <div class="gallery-item">
-                <img src="imgs/casacopada.png" alt="Main House Image" class="pic-main">
+                <img src="imgs/casa-moderna.jpg" alt="Main House Image" class="pic-main">
             </div>
             <div class="gallery-preview">
                 <img src="imgs/casacopada.png" alt="House Image 1" class="pic-thumbnail">
-                <img src="imgs/casacopada.png" alt="House Image 2" class="pic-thumbnail">
-                <img src="imgs/casacopada.png" alt="House Image 3" class="pic-thumbnail">
+                <img src="imgs/casa-en-bosque.png" alt="House Image 2" class="pic-thumbnail">
+                <img src="imgs/casas-rústica.jpg" alt="House Image 3" class="pic-thumbnail">
             </div>
         </div>
 
@@ -28,16 +40,19 @@
                 <h2 class="title">Título <span class="favorite">♥</span></h2>
                 <span class="price">100$</span>
                 <div class="rating">★★★★★</div>
-                <p class="description">""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""</p>
+                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </div>
 
-            <div class="profile-card">
-                <img src="./imgs/Profile.png" alt="Frabricio Gonzales" class="profile-pic">
-                <div class="profile-info">
-                    <h3 class="profile-name">Frabricio Gonzales</h3>
-                    <p class="profile-location">Villa Gesell, Buenos Aires</p>
+            <a href="./vendedor.html">
+                <div class="profile-card">
+                    <img src="./imgs/Profile.png" alt="Frabricio Gonzales" class="profile-pic">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Frabricio Gonzales</h3>
+                        <p class="profile-location">Villa Gesell, Buenos Aires</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+            
             <div class="map">
         
                 <iframe src="https://maps.google.com/maps?q=YourLocation&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600"
