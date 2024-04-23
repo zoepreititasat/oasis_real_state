@@ -1,30 +1,4 @@
-*{
-    font-family: "Work Sans", sans-serif;
-    font-weight: 300;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-body {
-    display: block;
-    margin: 0px;
-    background-color:#E8F1F3;
 
- 
-}
-
-.toolbar{
-        width: 100%;
-        height: 117px;
-        background-color: #B5CCD2;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-}
 .nav-buttons-container{
     margin-right: 10px;
 }
@@ -39,12 +13,6 @@ body {
 .highlighted{
     color: white;
     background-color: #11344A;
-}
-
-.toolbar-img{
-    width: 80px;
-    height: 80px;
-    margin-left: 10px;
 }
 
 .search-bar{
@@ -120,6 +88,7 @@ body {
     padding:15px;
 }
 .post-card-img{
+    border-radius: 16px;
     -moz-border-radius: 16px;
     -webkit-border-radius:16px;
     border-top-left-radius: 16px;
@@ -159,9 +128,6 @@ body {
 }
 .bold{
     font-weight: bolder;
-}
-.footer{
-    background-color: #B5CCD2;
 }
 
 .price {
