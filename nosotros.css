@@ -1,0 +1,29 @@
+.card{
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius:16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color:white ;
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-bottom: 40px;
+    margin-right: 22px;
+    width: 1200px;     
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 10px; 
+}
+.bold{
+    font-weight: 600;
+}
+
+.nosotrosCardNumLista{
+    font-weight: bold;
+}
+
+.nosotrosCardTexto{
+    font-weight: 300;
+}

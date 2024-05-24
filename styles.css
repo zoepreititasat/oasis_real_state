@@ -1,20 +1,4 @@
 
-.nav-buttons-container{
-    margin-right: 10px;
-}
-.nav-button{
-    border:none;
-    padding: 15px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.highlighted{
-    color: white;
-    background-color: #11344A;
-}
-
 .search-bar{
     height: fit-content;
     width: fit-content;
