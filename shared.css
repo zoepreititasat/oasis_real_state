@@ -36,7 +36,7 @@ a{
 }
 
 .toolbar a h1{
-    margin-left: 10px;
+    margin: 3px;
     color: #11344A;
     font-weight: 500;
 }
@@ -44,7 +44,7 @@ a{
 .toolbar-img{
     width: 80px;
     height: 80px;
-    margin-left: 10px;
+    margin: 10px;
 }
 .nav-buttons-container{
     margin-right: 10px;
@@ -69,4 +69,5 @@ a{
 }
 .footer{
     background-color: #B5CCD2;
+    padding: 12px;
 }
