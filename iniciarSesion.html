@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OASIS Inmobiliaria</title>
-        <link rel="stylesheet" href="shared.css">
-        <link rel="stylesheet" href="iniciarSesion.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS Inmobiliaria</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="iniciarSesion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <div class="toolbar">
         <a href="./index.html">
@@ -24,25 +26,32 @@
             <a href="./nosotros.html">
                 <button class="nav-button">Nosotros</button>
             </a>
-                
+
             <button class="nav-button">Publicar</button>
 
             <a href="./iniciarSesion.html">
                 <button class="nav-button">Iniciar Sesión</button>
             </a>
-            
+
             <button class="nav-button highlighted">Alquilar</button>
         </div>
     </div>
-    </div>
-    <div class="card">
-        <div class="email">
-            <input type="email" placeholder="Ingrese su email: ">
+
+    <form class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Iniciar Sesión</h1>
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Ingrese su email: ">
+                <input type="password" placeholder="Ingrese una contraseña: ">
+                <button type="submit">Iniciar Sesión</button>
+            </div>
         </div>
-        <div class="contrasenia">
-            <input type="password" placeholder="Ingrese una contraseña: ">
+        <div>
+            <img src="./imgs/inicio_sesion_png.png" class="containerImg">
         </div>
-        
-    </div>  
+    </form>
+
 </body>
+
 </html>
