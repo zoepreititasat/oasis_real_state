@@ -1,20 +1,4 @@
 
-.nav-buttons-container{
-    margin-right: 10px;
-}
-.nav-button{
-    border:none;
-    padding: 15px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.highlighted{
-    color: white;
-    background-color: #11344A;
-}
-
 .search-bar{
     height: fit-content;
     width: fit-content;
@@ -26,7 +10,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 50px auto;
+    margin: 86px auto;
     background-color: white;
     -moz-border-radius: 16px;
     -webkit-border-radius:16px;

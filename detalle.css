@@ -76,7 +76,7 @@ body {
 }
 
 .pic-thumbnail {
-    width: auto;
+    width: 200px;
     height: 155px;
     border-radius: 16px;
     border: 2px solid #11344A;

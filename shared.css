@@ -36,7 +36,7 @@ a{
 }
 
 .toolbar a h1{
-    margin-left: 10px;
+    margin: 3px;
     color: #11344A;
     font-weight: 500;
 }
@@ -44,9 +44,30 @@ a{
 .toolbar-img{
     width: 80px;
     height: 80px;
-    margin-left: 10px;
+    margin: 10px;
+}
+.nav-buttons-container{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav-button{
+    border:none;
+    padding: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
+.highlighted{
+    color: white;
+    background-color: #11344A;
+}
 .footer{
     background-color: #B5CCD2;
+    padding: 12px;
 }
