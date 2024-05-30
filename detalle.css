@@ -152,7 +152,7 @@ body {
     background: white;
     border-radius: 16px;
     border: 1px solid #A5A5A5;
-    box-shadow: 0px 4px 24px 0px #00000040;
+
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -203,3 +203,4 @@ body {
         width: 100%;
     }
 }
+

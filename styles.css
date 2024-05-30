@@ -62,8 +62,13 @@
     -moz-border-radius: 16px;
     -webkit-border-radius:16px;
     border-radius: 16px; 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     margin  : 25px;  
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.1s;
 }
 .post-card-title{
     font-size: 18px;
@@ -103,13 +108,7 @@
 .post-card-personas{
     margin-left: 80px;
 }
-.post-card{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-}
+
 .bold{
     font-weight: bolder;
 }
