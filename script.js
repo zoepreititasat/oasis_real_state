@@ -56,7 +56,7 @@ const listadoPropiedades = [
         capacidad: 8,
         estrellas: 4,
         propietario: 1,
-        ubicacion: "Mirama",
+        ubicacion: "Miramar",
         imagenPortada: "./imgs/casa miramar 1.jpg",
         imagenes:[
             "./imgs/casa miramar interior 1.jpg",
@@ -133,7 +133,7 @@ const listadoPropiedades = [
 
 
 
-function renderizarCasas(){
+function renderizarCasas(listado){
     
     const contenedor = document.getElementById("gallery");
 
@@ -176,12 +176,9 @@ renderizarCasas(listadoPropiedades);
 
 
 const searchbar = document.getElementById("search-input");
-const searchButton = document.getElementById("search-button");
 
 function buscar(){
-    console.log("Buscando...");
-    console.log(searchbar.value);
-    if(searchbar.value === ""){
+    if(searchbar?.value === "" || !searchbar?.value){
         renderizarCasas(listadoPropiedades);
         return;
     }

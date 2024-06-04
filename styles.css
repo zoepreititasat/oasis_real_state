@@ -29,15 +29,6 @@
     padding: 10px;
     border-radius: 8px;
 }
-.search-bar-button{ 
-    background-color: #11344A;
-    margin-left: 5px;
-    color: #DBDBDB;
-    width: 85px;
-    padding: 10px;
-    border-radius: 8px;
-
-}
 .search-bar-content{
     width: 100%;
     display: flex;

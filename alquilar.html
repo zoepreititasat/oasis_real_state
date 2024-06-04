@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS Inmobiliaria</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="alquilar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="toolbar">
+        <a href="./index.html">
+            <img class="toolbar-img" src="./imgs/icon_only (2).png" alt="logo" height="600">
+            <h1>
+                Oasis
+            </h1>
+        </a>
+        <div class="nav-buttons-container">
+            <a href="./nosotros.html">
+                <button class="nav-button">Nosotros</button>
+            </a>
+
+            <button class="nav-button">Publicar</button>
+
+            <a href="./iniciarSesion.html">
+                <button class="nav-button">Iniciar Sesión</button>
+            </a>
+
+            <button class="nav-button highlighted">Alquilar</button>
+        </div>
+    </div>
+
+    <form class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Solicitud</h1>
+                <label for="email"></label>
+                <input id="nameInput" type="name" placeholder="Ingrese su nombre: "> 
+                <input id="apellidoInput" type="apellido" placeholder="Ingrese su apellido: ">
+                <input id="propiedadInput" type="text" placeholder="Ingrese el nombre de la propiedad en la que esta interesado: ">
+                <div class="input">
+                    <label>Ingrese la cantidad de inquilinos: </label>
+                </div>
+
+                <div class="cant">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Ingrese la fecha de entrada: </label>
+                </div>
+                <div class="date">
+                    <input type="date">
+                </div>
+                <div class="input">
+                    <label>Ingrese la fecha de salida: </label>
+                </div>
+                <div class="date">
+                    <input type="date">
+                </div>
+                <input id="emailInput" type="email" placeholder="Ingrese su email: ">
+                <button onclick="completado()">Enviar Solicitud</button>
+            </div>
+        </div>
+    </form>
+    <script >
+        function completado(){
+            event.preventDefault()
+            console.log("submited");
+            let formCompletado = false;
+            const nombre = document.getElementById("nameInput").value;
+            const apellido = document.getElementById("apellidoInput").value;
+            const propiedad = document.getElementById("propiedadInput").value;
+            console.log(nombre.length >= 3 && 
+                apellido.length >= 3 && 
+                propiedad.length >= 3);
+            if(
+                nombre.length >= 3 && 
+                apellido.length >= 3 && 
+                propiedad.length >= 3
+            ){
+                formCompletado = true;
+            }else {
+                formCompletado = false
+            } 
+        
+            if (formCompletado == true) {
+                alert("Solicitud Enviada");
+            }else alert("Campos Inválidos");
+        }
+    </script>
+</body>
+
+</html>
