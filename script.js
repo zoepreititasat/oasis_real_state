@@ -136,10 +136,15 @@ const listadoPropiedades = [
 function renderizarCasas(){
     
     const contenedor = document.getElementById("gallery");
-    console.log(contenedor);
-    for (let index = 0; index < listadoPropiedades.length; index++) {
-        const propiedad = listadoPropiedades[index];
-        console.log(propiedad);
+
+    if(!contenedor) return;
+    contenedor.innerHTML = "";
+    if(listado.length === 0){
+        contenedor.innerHTML = "<h1>No se encontraron propiedades</h1>";
+        return;
+    }
+    for (let index = 0; index < listado.length; index++) {
+        const propiedad = listado[index];
         contenedor.innerHTML  += `
         <a href="./detalle.html?id=${propiedad.id}">
             <div class="post-card">
@@ -166,4 +171,46 @@ function renderizarCasas(){
     }
 }
 
-renderizarCasas();
+renderizarCasas(listadoPropiedades);
+
+
+const searchbar = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+
+function buscar(){
+    console.log("Buscando...");
+    console.log(searchbar.value);
+    if(searchbar.value === ""){
+        renderizarCasas(listadoPropiedades);
+        return;
+    }
+    const resultadoBusqueda = listadoPropiedades
+        .filter(propiedad => propiedad.ubicacion.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()) );
+    console.log(resultadoBusqueda);
+    renderizarCasas(resultadoBusqueda);
+}
+
+function renderizarDetalleCasa(casa){
+    const body = document.getElementById("detalle-body");
+    if(!body) return;
+    body.innerHTML = "";
+    body.innerHTML += ` <div class="title-card">`;
+    body.innerHTML += ` 
+        <h2 class="title"> 
+            ${casa.titulo} <span class="favorite">♥</span>
+        </h2> `;
+    body.innerHTML += `<span class="price">${casa.precio}$</span>`;
+    body.innerHTML += `<div class="rating">★★★★★</div>`;
+    body.innerHTML += `<p class="description">${casa.descripcion}</p>`; 
+    body.innerHTML += `</div>`;
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams);
+const id = urlParams.get('id');
+console.log(id);
+
+if(id){
+    const casa = listadoPropiedades.find(casa => casa.id == id);
+    renderizarDetalleCasa(casa);
+}
