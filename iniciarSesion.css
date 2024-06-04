@@ -48,8 +48,9 @@ input{
 }
 
 .containerImg{
-    width: 45vw;
+    width: 31vw;
     height: auto;
+    margin-right: 25px;
 }
 
 .card-body button{

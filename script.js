@@ -98,16 +98,16 @@ const listadoPropiedades = [
     },
     {
         id: 7,
-        titulo: "Costaesmeralda",
+        titulo: "Costa Esmeralda",
         precio: 234,
         descripcion: "adfasdfasdf",
         capacidad: 4,
         estrellas: 3,
         propietario: 1,
         ubicacion: "Costa Esmerarlda",
-        imagenPortada: "./imgs/casa Costa Esmeralda 1.jpg",
+        imagenPortada: "./imgs/casa costa esmeralda.jpg",
         imagenes:[
-            "./imgs/casa costa esmeralda interior 1.jpg",
+            "./imgs/casa costa esmeralda.jpg",
             "./imgs/casa costa esmeralda interior 2.jpg",
             "./imgs/casa costa esmeralda interior 3.jpg"
         ]
