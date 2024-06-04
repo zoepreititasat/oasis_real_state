@@ -3,6 +3,7 @@
 - Project Overview
 - Features
 - Technologies Used
+- Contact
 
 ## Project Overview
 Welcome to our Real Estate Website project! This project is a collaborative effort to create a comprehensive web application for managing real estate listings. The website allows users to browse, search, and inquire about various properties, providing a seamless experience for both buyers and sellers.
