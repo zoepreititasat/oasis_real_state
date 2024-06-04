@@ -12,7 +12,7 @@ const listadoPropiedades = [
         imagenes:[
             "./imgs/Casa pinamar interior 1.jpg",
             "./imgs/casa pinamar interior  2.jpg",
-            "./imgs/casa villa gesell interior 3.jpg"
+            "./imgs/casa pinamar interior 3.jpg"
         ]
     },
     {
@@ -59,7 +59,7 @@ const listadoPropiedades = [
         ubicacion: "Mirama",
         imagenPortada: "./imgs/casa miramar 1.jpg",
         imagenes:[
-            ".",
+            "./imgs/casa miramar interior 1.jpg",
             "./imgs/casa miramar interior 2.jpg",
             "./imgs/casa miramar interior 3.jpg"
         ]
@@ -168,6 +168,7 @@ function renderizarCasas(){
             </div>
         </a>
         `
+     
     }
 }
 
