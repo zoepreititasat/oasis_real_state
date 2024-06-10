@@ -75,7 +75,7 @@
                 <div class="date">
                     <input type="date">
                 </div>
-                <input id="emailInput" type="email" placeholder="Ingrese su email: ">
+                <input id="emailInput" placeholder="Ingrese su email: ">
                 <button onclick="completado()">Enviar Solicitud</button>
             </div>
         </div>
@@ -88,13 +88,15 @@
             const nombre = document.getElementById("nameInput").value;
             const apellido = document.getElementById("apellidoInput").value;
             const propiedad = document.getElementById("propiedadInput").value;
+            const email = document.getElementById("emailInput").value;
             console.log(nombre.length >= 3 && 
                 apellido.length >= 3 && 
                 propiedad.length >= 3);
             if(
                 nombre.length >= 3 && 
                 apellido.length >= 3 && 
-                propiedad.length >= 3
+                propiedad.length >= 3 &&
+                email.includes("@") 
             ){
                 formCompletado = true;
             }else {
@@ -103,7 +105,7 @@
         
             if (formCompletado == true) {
                 alert("Solicitud Enviada");
-            }else alert("Campos Inválidos");
+            }else alert("Campos Incompletos");
         }
     </script>
 </body>
