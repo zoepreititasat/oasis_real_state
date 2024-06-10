@@ -43,15 +43,38 @@
             <div class="card-body">
                 <h1>Iniciar Sesión</h1>
                 <label for="email"></label>
-                <input type="email" name="email" placeholder="Ingrese su email: ">
-                <input type="password" placeholder="Ingrese una contraseña: ">
-                <button type="submit">Iniciar Sesión</button>
+                <input id="emailInput" type="email" placeholder="Ingrese su email: ">
+                <input id="contraseniaInput" type="password" placeholder="Ingrese una contraseña: ">
+                <button onclick = "completado()" >Iniciar Sesión</button>
             </div>
         </div>
         <div>
             <img src="./imgs/ft inicio de sesion.png" class="containerImg">
         </div>
     </form>
+    <script >
+        function completado(){
+            event.preventDefault()
+            console.log("submited");
+            let formCompletado = false;
+            const email = document.getElementById("emailInput").value;
+            const contrasenia = document.getElementById("contraseniaInput").value;
+            console.log(email.length >=5 &&
+                contrasenia.length >= 3);
+            if(
+                email.length >=5 &&
+                email.includes("@")  &&
+                contrasenia.length >= 3
+            ){
+                formCompletado = true;
+            }else {
+                formCompletado = false
+            } 
+            if (formCompletado == true) {
+                alert("Iniciando sesión");
+            }else alert("Campos Incompletos");
+        }
+    </script>
 
 </body>
 

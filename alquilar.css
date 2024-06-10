@@ -89,3 +89,8 @@ input{
     margin-left: 33px;
     align-content: flex-start;  
 }
+.containerImg{
+    width: 31vw;
+    height: auto;
+    margin-right: 25px;
+}
