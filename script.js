@@ -22,15 +22,26 @@ function renderizarCasas(listado){
                     <div class="post-card-header-and-price">
                         <div>
                             <b class="bold">${propiedad.titulo}</b>
-                            <h1 class="post-card-title">- ${propiedad.ubicacion} </h1>
+                            <h1 class="post-card-title">
+                            <span class="material-symbols-outlined">
+                                home_pin
+                            </span>
+                            ${propiedad.ubicacion} </h1>
                         </div>
                         <h1 class="post-card-price">${propiedad.precio}$</h1>
                     </div>
                     <div class="post-card-h3">
-                    <div class="rating">★★★★</div>
+                    <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    
+                    </div>
                         <h3 class="post-card-personas">
                             ${propiedad.capacidad}
-                            <img src="imgs/people.png" height="24">
+                         <span class="material-symbols-outlined">
+                            group
+                        </span>
                         </h3>
                     </div>
                 </div>
