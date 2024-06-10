@@ -1,0 +1,38 @@
+const listadopropretarios = [
+    {
+        id: 1,
+        nombre: "Elena Vázquez",
+        ubicacion: "Pinamar",
+        propiedades: [1, 2],
+        fotoperfil: "./imgs/propietarios/propietario1.jpg",
+        numerotel: "+54 9 11 2345-6789",
+        email: " elena.vazquez123@gmail.com",
+    },
+    {
+        id: 2,
+        nombre: "Martín Fernández",
+        ubicacion: "miramar",
+        propiedades: [3, 4],
+        fotoperfil: "./imgs/propietarios/propietario4.png",
+        numerotel: "+54 9 11 9876-5432",
+        email: "martin.fernandez456@gmail.com",
+    },
+    {
+        id: 3,
+        nombre: "Valeria Martínez",
+        ubicacion: "Villa Gesell",
+        propiedades: [5, 6],
+        fotoperfil: "./imgs/propietarios/propietario2.jpg",
+        numerotel: "+54 9 11 3456-7890",
+        email: "valeria.martinez789@gmail.com",
+    },
+    {
+        id: 4,
+        nombre: "Gabriel Torres",
+        ubicacion: "Carilo",
+        propiedades: [7, 8],
+        fotoperfil: "./imgs/propietarios/propietario3.jpg",
+        numerotel: "+54 9 11 6543-2109",
+        email: "gabrieltorres@gmail.com",
+    },
+];
