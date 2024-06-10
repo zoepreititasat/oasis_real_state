@@ -117,31 +117,21 @@ body {
 .favorite {
     font-size: 24px;
     color: red;
-    position: absolute;
-    right: 25px;
-    top: 25px;
 }
 
 .price {
     font-size: 24px;
     color: #333;
-    position: absolute;
-    right: 25px;
-    top: 50px;
 }
 
 .rating {
     color: #ffd700;
-    position: absolute;
-    left: 25px;
-    top: 45px;
 }
 
 .description {
     font-size: 16px;
     color: #666;
-    margin-top: 25px;
- 
+    margin-top: 25px; 
 }
 
 .profile-card {
