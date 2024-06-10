@@ -14,8 +14,8 @@
     width: auto;   
     height: fit-content;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding: 10px; 
-    border: #B5CCD2 solid 6px;
+    padding: 25px;
+    border: #B5CCD2 solid 1px;
 }
 .bold{
     font-weight: 600;
