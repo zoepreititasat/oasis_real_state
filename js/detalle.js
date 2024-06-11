@@ -68,4 +68,6 @@ console.log(propietario);
 if (id) {
   const casa = listadoPropiedades.find((casa) => casa.id == id);
   renderizarDetalleCasa(casa,propietario);
+}else{
+  window.location.href = "./index.html"
 }

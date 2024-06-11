@@ -30,4 +30,6 @@ const propietario = listadopropretarios.find((propietario) => propietario.id ===
 console.log(propietario);
 if (id) {
   renderPropietario(propietario);
+}else{
+    window.location.href = "./index.html"
 }
