@@ -148,3 +148,11 @@ a{
     align-items: center;
     margin-top: 8px;
 }
+
+.logo{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
