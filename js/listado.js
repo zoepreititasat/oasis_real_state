@@ -24,7 +24,7 @@ const listadoPropiedades = [
         estrellas: 4,
         propietario: 1,
         ubicacion: "Mar del Plata",
-        imagenPortada: "./imgs/casa mar de plata 1.jpg",
+        imagenPortada: "./imgs/casa alpina.jpg",
         imagenes:[
             "./imgs/casa mar de plata interior 1.jpg",
             "./imgs/casa mar del plata interior 2.jpg",
@@ -45,7 +45,7 @@ const listadoPropiedades = [
         imagenes:[
             "./imgs/casa carilo interior 1.jpg",
             "./imgs/baño cabaña alpina del bosque.jpg",
-            "./imgs/imgscocina cabaña alpina.jpg"
+            "./imgs/cocina cabaña alpina.jpg"
         ]
     },
     {
@@ -105,11 +105,11 @@ const listadoPropiedades = [
         estrellas: 3,
         propietario: 1,
         ubicacion: "Costa Esmerarlda",
-        imagenPortada: "./imgs/casa costa esmeralda.jpg",
+        imagenPortada: "./imgs/casa moderna.jpg",
         imagenes:[
-            "./imgs/casa costa esmeralda.jpg",
-            "./imgs/casa costa esmeralda interior 2.jpg",
-            "./imgs/casa costa esmeralda interior 3.jpg"
+            "./imgs/cocinas-de-lujo.jpg",
+            "./imgs/habitacion de lujo.jpg",
+            "./imgs/comedor de lujo.jpg"
         ]
     },
     {
