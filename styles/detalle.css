@@ -32,11 +32,6 @@ body {
     margin-right: 10px;
 }
 
-.profile-info {
-    display: flex;
-    flex-direction: column;
-}
-
 .contact-icon {
     font-size: 20px;
     color: #333;
@@ -86,7 +81,15 @@ body {
     border: 1px solid #11344A;
     margin: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.pic-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
 
 .detalle-content{
     display: flex;
@@ -146,7 +149,6 @@ body {
     padding-top: 25px;
     background: white;
     border-radius: 16px;
-    border: 1px solid #A5A5A5;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: row;
@@ -156,6 +158,12 @@ body {
     align-items: center;
     margin-left: 25px;
     margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .profile-pic {
@@ -168,16 +176,24 @@ body {
 }
 
 .profile-info {
+    padding-left: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 .profile-name {
     margin: 0;
-    font-size: 20px;
+    font-size: 40px;
     color: #333;
 }
 
 .profile-location {
+    margin: 5px;
     font-size: 16px;
     color: #666;
 }

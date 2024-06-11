@@ -41,11 +41,12 @@
 
 .profile-name {
     margin: 0;
-    font-size: 20px;
+    font-size: 32px;
     color: #333;
 }
 
 .profile-location {
+    text-align: start;
     font-size: 16px;
     color: #666;
 }
