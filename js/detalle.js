@@ -2,8 +2,14 @@ function renderizarDetalleCasa(casa, propietario) {
 
   // imprimir imagen principal
   $("#foto-principal").append(
-    `<img  src="${casa.imagenPortada}"  alt="${casa.titulo}"   class="pic-main">`
+    `<img src="${casa.imagenPortada}"  alt="${casa.titulo}"   class="pic-main">`
   );
+
+
+  $(".pic-main").on("click", function (event) {
+    openVisorImagenes($(this).attr("src"));
+  });
+
 
   $("#title-container").append(
     `
@@ -38,6 +44,11 @@ function renderizarDetalleCasa(casa, propietario) {
             >
         `);
   }
+
+  $(".pic-thumbnail").on("click", function (event) {
+    openVisorImagenes($(this).attr("src"));
+  });
+
 
   // vendedor
   $("#detalle-card").append(
