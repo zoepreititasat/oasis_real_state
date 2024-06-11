@@ -9,11 +9,6 @@ function renderizarDetalleCasa(casa, propietario) {
     `
         <h2 class="title"> 
             ${casa.titulo} 
-            <span class="favorite">
-              <span class="material-symbols-outlined">
-                favorite
-              </span>  
-            </span>
         </h2>
         `
   );
