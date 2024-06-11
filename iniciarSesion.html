@@ -43,9 +43,9 @@
             <div class="card-body">
                 <h1>Iniciar Sesión</h1>
                 <label for="email"></label>
-                <input id="emailInput" type="email" placeholder="Ingrese su email: ">
-                <input id="contraseniaInput" type="password" placeholder="Ingrese una contraseña: ">
-                <button onclick = "completado()" >Iniciar Sesión</button>
+                <input id="emailInput" type="email" placeholder="Ingrese su email: " required>
+                <input id="contraseniaInput" type="password" placeholder="Ingrese una contraseña: " required>
+                <input type="submit" onclick = "completado()" value="Iniciar Sesión" ></button>
             </div>
         </div>
         <div>
@@ -82,25 +82,19 @@
     
     <script >
         function completado(){
-            event.preventDefault()
+            ///event.preventDefault()
             console.log("submited");
             let formCompletado = false;
             const email = document.getElementById("emailInput").value;
             const contrasenia = document.getElementById("contraseniaInput").value;
-            console.log(email.length >=5 &&
-                contrasenia.length >= 3);
-            if(
-                email.length >=5 &&
-                email.includes("@")  &&
-                contrasenia.length >= 3
-            ){
-                formCompletado = true;
-            }else {
-                formCompletado = false
-            } 
-            if (formCompletado == true) {
-                alert("Iniciando sesión");
-            }else alert("Campos Incompletos");
+            console.log(email,
+                contrasenia);
+
+            if(!email || !contrasenia) return;
+            else if(!email.includes("@")) alert("Ingrese un email en formato válido");
+            else if(email.length < 5) alert("El email debe contener más de 5 caracteres");
+            else if(contrasenia.length < 4) alert("La contraseña debe contener más de 4 caracteres");
+            else alert("Iniciando sesión");
         }
     </script>
 
