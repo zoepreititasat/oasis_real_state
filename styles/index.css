@@ -2,7 +2,7 @@
 .search-bar{
     height: fit-content;
     width: fit-content;
-    min-width: 70vw;
+    min-width: 50vw;
     padding: 10px 15px ;
     display: flex;
     align-content: center;
