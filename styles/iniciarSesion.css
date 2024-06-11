@@ -4,11 +4,17 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
 }
 .card{
-    height: 362px;
+    height: 300px;
     width: 421px;
-    padding: 10px 15px;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -35,8 +41,6 @@ input{
 .card-body{
     display: flex;
     justify-content: center;
-    border-radius: 4px;
-    border: 1px solid gray;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
@@ -48,9 +52,9 @@ input{
 }
 
 .containerImg{
-    width: 31vw;
+    width: 100vw;
     height: auto;
-    margin-right: 25px;
+    filter: brightness(50%);
 }
 
 .card-body button{
