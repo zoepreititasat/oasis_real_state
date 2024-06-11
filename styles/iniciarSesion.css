@@ -62,3 +62,11 @@ input{
     background-color: #11344A;
     margin: 10px;
 }
+
+
+#submit-button{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #11344A;
+}
