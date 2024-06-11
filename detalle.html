@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OASIS Inmobiliaria</title>
-    <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="detalle.css">
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/detalle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/lib/jquery-3.7.1.js"> </script>
 </head>
 
 <body>
@@ -19,9 +20,7 @@
     <div class="toolbar">
         <a href="./index.html">
             <img class="toolbar-img" src="./imgs/icon_only (2).png" alt="logo" height="600">
-            <h1>
-                Oasis
-            </h1>
+            <h1> Oasis </h1>
         </a>
         <div class="nav-buttons-container">
             <a href="./nosotros.html">
@@ -38,25 +37,29 @@
         </div>
     </div>
 
-    <div class="detalle_card">
-        <div class="gallery">
+    <div id="detalle-card" class="detalle_card">
+        <div id="title-container">
+
+        </div>
+        <div class="gallery-pics">
             <div id="foto-principal" class="gallery-item">
-                
+                <!-- Imagen Principal  -->
             </div>
             <div id="gallery-preview" class="gallery-preview">
-                <!-- <img src="imgs/Casa pinamar interior 1.jpg" alt="House Image 1" class="pic-thumbnail">
-                <img src="imgs/casa pinamar interior  2.jpg" alt="House Image 2" class="pic-thumbnail">
-                <img src="imgs/casa pinamar interior 3.jpg" alt="House Image 3" class="pic-thumbnail"> -->
+                <!-- Imagenes en Miniaturas -->
             </div>
         </div>
 
         <div class="detalle-content" id="detalle-body">
-            
+            <!-- Descripcion-->
         </div>
 
     </div>
-    <script src="listado.js"></script>
-    <script src="detalle.js"></script>
+
+    <script src="./js/listado.js"></script>
+    <script src="./js/proprietarios.js"></script>
+    <script src="./js/obtenerTarjetaPropietario.js"></script>
+    <script src="./js/detalle.js"></script>
 
 </body>
 

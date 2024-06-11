@@ -17,6 +17,15 @@
     margin-top: 40px;
 }
 
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
