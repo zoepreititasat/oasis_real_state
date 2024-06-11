@@ -25,8 +25,8 @@ function buscar(){
         return;
     }
     const resultadoBusqueda = listadoPropiedades
-        .filter(propiedad => propiedad.ubicacion.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()) ||
-        propiedad.titulo.toLocaleLowerCase().includes(searchbar.value.toLocaleLowerCase()) );
+        .filter(propiedad => propiedad.ubicacion.toLocaleLowerCase().match(searchbar.value.toLocaleLowerCase()) ||
+        propiedad.titulo.toLocaleLowerCase().match(searchbar.value.toLocaleLowerCase()) );
     console.log(resultadoBusqueda);
     renderizarCasas(resultadoBusqueda);
 }

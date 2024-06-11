@@ -19,9 +19,9 @@ function obtenerTarjetaPropiedad(propiedad){
                     </div>
                     <div class="post-card-h3">
                         <div class="rating">
-                            <span class="material-symbols-outlined">
-                                star
-                            </span>
+                            ${
+                                renderizarEstrellas(propiedad.estrellas)
+                            }
                         </div>
                         <h3 class="post-card-personas">
                             ${propiedad.capacidad}

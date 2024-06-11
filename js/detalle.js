@@ -23,15 +23,8 @@ function renderizarDetalleCasa(casa, propietario) {
             <div class="title-card">
                 <span class="price">${casa.precio}$</span>
                 <div class="rating">
-                  <span class="material-symbols-outlined">
-                    star
-                  </span>
-                  <span class="material-symbols-outlined">
-                    star
-                  </span>
-                  <span class="material-symbols-outlined">
-                    star
-                  </span>
+                  ${renderizarEstrellas(casa.estrellas)}
+                  
                 </div>
                 <p class="description">${casa.descripcion}</p>
             </div>
