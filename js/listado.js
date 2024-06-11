@@ -44,8 +44,8 @@ const listadoPropiedades = [
         imagenPortada: "./imgs/casa carilo 1.jpg",
         imagenes:[
             "./imgs/casa carilo interior 1.jpg",
-            "./imgs/casa carilo interior 2.jpg",
-            "./imgs/casa carilo intenrior 3.jpg"
+            "./imgs/baño cabaña alpina del bosque.jpg",
+            "./imgs/imgscocina cabaña alpina.jpg"
         ]
     },
     {
