@@ -128,7 +128,8 @@ body {
 
 .price {
     font-size: 24px;
-    color: #333;
+    color: #0a9215;
+    font-weight: 600;
 }
 
 .rating {

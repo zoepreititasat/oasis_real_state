@@ -41,43 +41,27 @@
     <form class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Solicitud</h1>
-                <label for="email"></label>
-                <input id="nameInput" type="name" placeholder="Ingrese su nombre: "> 
-                <input id="apellidoInput" type="apellido" placeholder="Ingrese su apellido: ">
-                <input id="propiedadInput" type="text" placeholder="Ingrese el nombre de la propiedad en la que esta interesado: ">
-                <div class="input">
-                    <label>Ingrese la cantidad de inquilinos: </label>
-                </div>
+                <h1>Solicitud de Reserva</h1>
+                <div id="propiedad-container">
 
-                <div class="cant">
-                    <select>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
                 </div>
+                <label for="email"></label>
+                <input id="nameInput" type="text" placeholder="Ingrese su nombre: " required> 
+                <input id="apellidoInput" type="text" placeholder="Ingrese su apellido: " required>
                 <div class="input">
                     <label>Ingrese la fecha de entrada: </label>
                 </div>
                 <div class="date">
-                    <input type="date">
+                    <input type="date" required>
                 </div>
                 <div class="input">
                     <label>Ingrese la fecha de salida: </label>
                 </div>
                 <div class="date">
-                    <input type="date">
+                    <input type="date" required>
                 </div>
-                <input id="emailInput" placeholder="Ingrese su email: ">
-                <button onclick="completado()">Enviar Solicitud</button>
+                <input id="emailInput" type="email" required placeholder="Ingrese su email: ">
+                <input class="submit-button" type="submit" onclick="completado()" value="Enviar Solicitud"></input>
             </div>
         </div>
     </form>
@@ -108,35 +92,10 @@
             &copy; 2024 Oasis. All rights reserved.
         </p>
     </div>
-    
-    <script >
-        function completado(){
-            event.preventDefault()
-            console.log("submited");
-            let formCompletado = false;
-            const nombre = document.getElementById("nameInput").value;
-            const apellido = document.getElementById("apellidoInput").value;
-            const propiedad = document.getElementById("propiedadInput").value;
-            const email = document.getElementById("emailInput").value;
-            console.log(nombre.length >= 3 && 
-                apellido.length >= 3 && 
-                propiedad.length >= 3);
-            if(
-                nombre.length >= 3 && 
-                apellido.length >= 3 && 
-                propiedad.length >= 3 &&
-                email.includes("@") 
-            ){
-                formCompletado = true;
-            }else {
-                formCompletado = false
-            } 
-        
-            if (formCompletado == true) {
-                alert("Solicitud Enviada");
-            }else alert("Campos Incompletos");
-        }
-    </script>
+    <script src="./js/renderizarEstrellas.js"></script>
+    <script src="./js/obtenerTarjetaPropiedad.js"> </script>
+    <script src="./js/listado.js"> </script>
+    <script src="./js/alquilar.js"> </script>
 </body>
 
 </html>

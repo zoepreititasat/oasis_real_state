@@ -1,7 +1,7 @@
-function obtenerTarjetaPropiedad(propiedad){
+function obtenerTarjetaPropiedad(propiedad,redirecciona = true){
     return (
         `
-        <a href="./detalle.html?id=${propiedad.id}">
+        ${redirecciona ? `<a href="./detalle.html?id=${propiedad.id}">`  :`` }
             <div class="post-card">
                 <img class="post-card-img" src="${propiedad.imagenPortada}" alt="${propiedad.titulo}" >
                 <div class="post-card-body">
@@ -32,7 +32,7 @@ function obtenerTarjetaPropiedad(propiedad){
                     </div>
                 </div>
             </div>
-        </a>
+        ${redirecciona ? `</a>`  :`` }
         `
     );
 }

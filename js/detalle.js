@@ -21,16 +21,24 @@ function renderizarDetalleCasa(casa, propietario) {
 
   $("#detalle-card").append(
     `
-            <div class="title-card">
-                <span class="price">${casa.precio}$</span>
-                <div class="rating">
-                  ${renderizarEstrellas(casa.estrellas)}
-                  
-                </div>
-                <p class="description">${casa.descripcion}</p>
+      <div class="title-card">
+        <div class="flex flex-row w-80p justify-between">
+          <button class="alquilar-button highlighted" id="alquilar-button">Alquilar</button>
+          <div class="flex flex-col">
+            <span class="price">${casa.precio}$</span>
+            <div class="rating">
+              ${renderizarEstrellas(casa.estrellas)}
             </div>
-        `
+          </div>  
+        </div>
+          <p class="description">${casa.descripcion}</p>
+      </div>
+    `
   );
+
+  $("#alquilar-button").on( "click", function() {
+      window.location.href = "./alquilar.html?id=" + casa.id
+  } );
 
 
   // imprimir imagenes de mineatura

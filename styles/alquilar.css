@@ -94,3 +94,14 @@ input{
     height: auto;
     margin-right: 25px;
 }
+
+.post-card {
+    transform: none;
+    box-shadow: none;
+    border: none;
+}
+
+.post-card:hover {
+    transform: none;
+    box-shadow: none;
+}
