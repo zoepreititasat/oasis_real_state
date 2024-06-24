@@ -41,6 +41,7 @@ a{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 .toolbar a h1{
@@ -53,8 +54,8 @@ a{
 }
 
 .toolbar-img{
-    width: auto;
-    height: 60px;
+    max-width:12%;
+    height:auto;
     margin: 10px;
 }
 
@@ -92,6 +93,8 @@ a{
     background-color: white;
     padding: 12px;
     margin-top: 25px;
+    min-width: 100%;
+    height: auto;
 }
 
 .gallery {
@@ -212,11 +215,11 @@ a{
 
 .flex{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.flex-row{
-    flex-direction: row;
-}
+
 
 .flex-col{
     flex-direction: column;
